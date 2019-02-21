@@ -33,7 +33,6 @@ function validate() {
         draw();
         drawRect()
         historyDots();
-        lastDot();
     };
 
     addEvent(window, "resize", function(event) {
@@ -48,7 +47,6 @@ function validate() {
             draw();
             drawRect()
             historyDots();
-            lastDot();
         } else {
             canvas.width = window.innerWidth * 0.9;
             canvas.height = window.innerWidth * 0.9;
@@ -60,7 +58,6 @@ function validate() {
             draw();
             drawRect()
             historyDots();
-            lastDot();
         }
     });
 

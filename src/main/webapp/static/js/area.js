@@ -48,8 +48,6 @@ function getMP(canvas, event) {
     };
 }
 
-
-
 function drawRect() {
     ctx.beginPath();
     ctx.fillStyle = "rgba(255, 255, 255, 0.1)";
@@ -75,13 +73,6 @@ function historyDots() {
 canvas.addEventListener('click', function (event) {
     const MP = getMP(canvas, event);
     if ((MP.x - width / 2)/scale >= -5 && (MP.x - width / 2)/scale <= 3 && (-MP.y + height / 2)/scale >= -3 && (-MP.y + height / 2)/scale <= 5) {
-        draw();
-        drawRect();
-        historyDots();
-        ctx.beginPath();
-        ctx.arc(MP.x, MP.y, 3, 0, Math.PI * 2);
-        ctx.fillStyle = '#FFF';
-        ctx.fill();
         document.getElementById('x-hidden').value = ((MP.x - width / 2) / scale).toFixed(2);
         document.getElementById('x-hidden').dispatchEvent(new Event('input'));
         document.getElementById('y-text').value = ((-MP.y + height / 2) / scale).toFixed(2);
@@ -93,6 +84,7 @@ canvas.addEventListener('click', function (event) {
         drawRect();
         historyDots();
     }
+    setTimeout("window.dispatchEvent(new Event('resize'))", 200);
     ctx.fillStyle= '#FFF';
     ctx.font = "12px Helvetica";
     ctx.fillText("(" + ((MP.x - width / 2) / scale).toFixed(2).toString()+"; "+((-MP.y + height / 2) / scale).toFixed(2).toString()+")", width / 60, height * 0.98);
@@ -103,7 +95,6 @@ canvas.addEventListener('mousemove', function (event) {
     draw();
     drawRect();
     historyDots();
-    lastDot();
     ctx.beginPath();
     ctx.fillStyle= '#FFF';
     ctx.font = "12px Helvetica";
@@ -113,4 +104,3 @@ canvas.addEventListener('mousemove', function (event) {
 draw();
 drawRect();
 historyDots();
-lastDot();
