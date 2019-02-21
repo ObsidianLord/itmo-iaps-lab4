@@ -1,0 +1,24 @@
+@media screen and (max-width: 792px) {
+    body:first-child {
+        margin: auto;
+        width: 90%
+    }
+
+    .header {
+        font-size: 10pt
+    }
+
+    #reset-button {
+        display: block;
+        margin: auto auto 12px
+    }
+
+    .column {
+        float: initial
+    }
+
+    .left,
+    .right {
+        width: auto
+    }
+}

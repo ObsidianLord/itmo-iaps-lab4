@@ -1,0 +1,210 @@
+body {
+    background: url(/static/img/pattern.png);
+    font-family: courier sans-serif;
+    color: #f5f5f5;
+    max-width: 1280px;
+    margin: auto
+}
+
+.result {
+    max-width: 400px
+}
+
+#results {
+    margin-top: 2em;
+    margin-bottom: 2em
+}
+
+* {
+    box-sizing: border-box
+}
+
+#canvas,
+#results,
+.header {
+    text-align: center
+}
+
+.header p {
+    margin-top: .07em;
+    margin-bottom: .07em
+}
+
+.login,
+.main {
+    margin-top: 1em
+}
+
+.main,
+.rform {
+    text-align: center
+}
+
+.rform {
+    margin-top: 20px
+}
+
+.login {
+    max-width: 420px
+}
+
+.auth-info {
+    margin: 12px;
+    font-style: italic
+}
+
+#un {
+    font-weight: 700
+}
+
+.column {
+    float: left;
+    padding: 10px
+}
+
+rd,
+th {
+    padding: 0 5px
+}
+
+#result-button {
+    width: auto
+}
+
+.login-span {
+    display: inline-block;
+    width: 5em;
+    text-align: right
+}
+
+.left {
+    width: 40%
+}
+
+.right {
+    width: 60%
+}
+
+.info {
+    padding: 1em!important;
+    font-weight: 700
+}
+
+#canvas {
+    display: block;
+    margin: auto
+}
+
+.result-label {
+    display: inline-block;
+    width: 4.5em
+}
+
+select {
+    width: 3em
+}
+
+label {
+    font-family: comic-sans sans-serif;
+    display: block
+}
+
+.text,
+input[type=button],
+input[type=submit],
+select {
+    background-color: rgba(255, 165, 32, .98);
+    font-weight: bolder;
+    border: solid #000;
+    border-radius: 2px
+}
+
+input[type=button],
+input[type=submit] {
+    height: 30px;
+    font-color: black;
+    margin: auto auto 12px;
+    width: 25%
+}
+
+.text:hover,
+input[type=submit]:hover {
+    box-shadow: 0 0 4px 3px rgba(255, 165, 32, .98)
+}
+
+#username {
+    margin-bottom: -5px
+}
+
+#password {
+    margin-bottom: 12px
+}
+
+.text {
+    margin-top: .8em;
+    margin-left: .4em;
+    margin-bottom: 1em;
+    width: 15em
+}
+
+#history_table {
+    font-size: 8pt
+}
+
+table {
+    border-collapse: collapse;
+    margin-left: auto;
+    margin-right: auto
+}
+
+table,
+td,
+th {
+    border: 1px solid rgba(255, 165, 32, .98)
+}
+
+#y-text {
+    width: 3em;
+    margin-right: .4em
+}
+
+input[type=button] {
+    margin-left: 2em
+}
+
+.title {
+    margin-top: .5em;
+    margin-bottom: .5em
+}
+
+.hl:hover {
+    background-color: rgba(0, 0, 0, .78);
+    box-shadow: 0 0 5px 4px rgba(255, 165, 32, .98)
+}
+
+.border {
+    padding: .3em;
+    border-radius: 4px;
+    background-color: rgba(0, 0, 0, .39)
+}
+
+.previous-checks {
+    font-family: sans-serif;
+    text-align: center;
+    margin-top: 20px;
+    margin-bottom: 20px;
+    max-height: 310px;
+    overflow: auto
+}
+
+.good-row {
+    color: rgba(46, 169, 22, .86)
+}
+
+.bad-row {
+    color: #ff2f00
+}
+
+.shadow {
+    box-shadow: 0 0 4px 3px rgba(255, 165, 32, .98)
+}

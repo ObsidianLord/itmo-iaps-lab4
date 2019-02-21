@@ -1,0 +1,18 @@
+<!DOCTYPE html>
+<html lang="en" xmlns:th="http://www.thymeleaf.org">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Авторизация</title>
+    <script src="https://cdn.jsdelivr.net/npm/vue/dist/vue.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/vue-resource@1.5.1"></script>
+    <script th:inline="javascript">const frontendData = [[${frontendData}]];</script>
+    <link rel="stylesheet" href="/static/css/styles.css" type="text/css"/>
+    <link rel="stylesheet" href="/static/css/rLogin.css" type="text/css"/>
+</head>
+<body class="login">
+    <div id="app"></div>
+    <script src="/static/js/components.js"></script>
+    <script src="/static/js/login.js"></script>
+</body>
+</html>

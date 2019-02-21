@@ -1,0 +1,22 @@
+@media screen and (max-width: 792px) {
+    .border {
+        margin-right: 10px;
+        margin-left: 10px
+    }
+
+    body {
+        font-size: 10pt
+    }
+
+    .login-span {
+        display: block;
+        text-align: center;
+        margin-right: auto;
+        margin-left: auto
+    }
+
+    .login-span,
+    .text {
+        margin-top: 7px
+    }
+}
