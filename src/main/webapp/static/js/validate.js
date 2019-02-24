@@ -42,24 +42,32 @@ function validate() {
             width = canvas.width;
             height = canvas.height;
             scale = canvas.width / 12;
-            if (document.getElementById('r-select').value >= 0) radius = scale * document.getElementById('r-select').value;
-            else radius = 0;
-            draw();
-            drawRect()
-            historyDots();
         } else {
             canvas.width = window.innerWidth * 0.9;
             canvas.height = window.innerWidth * 0.9;
             width = canvas.width;
             height = canvas.height;
             scale = canvas.width / 12;
-            if (document.getElementById('r-select').value >= 0) radius = scale * document.getElementById('r-select').value;
-            else radius = 0;
-            draw();
-            drawRect()
-            historyDots();
         }
+
+        if (document.getElementById('r-select').value >= 0) radius = scale * document.getElementById('r-select').value;
+        else radius = 0;
+        draw();
+        drawRect()
+        historyDots();
+        const x = document.querySelectorAll('td.x');
+        const y = document.querySelectorAll('td.y');
+        if (x.length > 0) {
+            ctx.beginPath();
+            let valueOfX = parseFloat(x[0].innerText);
+            let valueOfY = parseFloat(y[0].innerText);
+            ctx.fillStyle= '#FFF';
+            ctx.font = "12px Helvetica";
+            ctx.fillText("(" + valueOfX.toFixed(2).toString()+"; "+ valueOfY.toFixed(2).toString()+")", width / 60, height * 0.98);
+        }
+
     });
+
 
 
     addEvent(document, "fullscreenchange", function(event) {

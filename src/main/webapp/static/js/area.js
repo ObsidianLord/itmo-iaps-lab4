@@ -84,10 +84,7 @@ canvas.addEventListener('click', function (event) {
         drawRect();
         historyDots();
     }
-    setTimeout("window.dispatchEvent(new Event('resize'))", 200);
-    ctx.fillStyle= '#FFF';
-    ctx.font = "12px Helvetica";
-    ctx.fillText("(" + ((MP.x - width / 2) / scale).toFixed(2).toString()+"; "+((-MP.y + height / 2) / scale).toFixed(2).toString()+")", width / 60, height * 0.98);
+    setTimeout("window.dispatchEvent(new Event('resize'))", 500);
 });
 
 canvas.addEventListener('mousemove', function (event) {
